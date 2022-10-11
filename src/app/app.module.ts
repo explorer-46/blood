@@ -9,6 +9,7 @@ import { SearchdonorComponent } from './searchdonor/searchdonor.component';
 import { DeletedonorComponent } from './deletedonor/deletedonor.component';
 import { RouterModule,Routes  } from '@angular/router';
 import { ViewallComponent } from './viewall/viewall.component';
+import {HttpClientModule } from '@angular/common/http'
 
 
 const appRoutes : Routes=[
@@ -41,6 +42,7 @@ const appRoutes : Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
